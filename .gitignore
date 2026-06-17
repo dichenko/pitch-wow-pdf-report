@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+config/assistants.json
+data/*
+!data/.gitkeep
+coverage/
+*.log

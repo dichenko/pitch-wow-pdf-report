@@ -1,0 +1,113 @@
+@page {
+  size: 1024px 768px;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172026;
+  background: #f5f3ec;
+}
+
+.slide {
+  width: 1024px;
+  height: 768px;
+  page-break-after: always;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  padding: 64px 72px;
+  background: #f5f3ec;
+}
+
+.cover {
+  background: linear-gradient(135deg, #172026 0%, #233642 58%, #f0b84f 58%, #f0b84f 100%);
+  color: #ffffff;
+}
+
+.mark {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  opacity: 0.78;
+}
+
+.kicker,
+.section-title {
+  margin-top: 70px;
+  font-size: 22px;
+  color: #d9804a;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 24px 0 0;
+  max-width: 680px;
+  font-size: 78px;
+  line-height: 0.98;
+}
+
+h2 {
+  margin: 20px 0 18px;
+  font-size: 44px;
+}
+
+h3 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+p,
+li {
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+.tagline {
+  max-width: 600px;
+  font-size: 30px;
+}
+
+.founder {
+  position: absolute;
+  left: 72px;
+  bottom: 64px;
+  display: flex;
+  gap: 18px;
+  font-size: 24px;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  margin-top: 48px;
+}
+
+.lead {
+  font-size: 30px;
+  max-width: 850px;
+}
+
+.signal-list,
+.risk-list {
+  display: grid;
+  gap: 18px;
+  margin: 0;
+  padding-left: 28px;
+}
+
+.signal-list li::marker {
+  color: #2e7d5b;
+}
+
+.risk-list li::marker {
+  color: #b54a3f;
+}
+
+.mt {
+  margin-top: 46px;
+}

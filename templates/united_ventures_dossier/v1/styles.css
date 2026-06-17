@@ -1,0 +1,137 @@
+@page {
+  size: 1024px 768px;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #15201d;
+}
+
+.slide {
+  width: 1024px;
+  height: 768px;
+  page-break-after: always;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  padding: 58px 68px;
+}
+
+.cover {
+  color: #ffffff;
+  background: #111c1a;
+}
+
+.cover::after {
+  content: "";
+  position: absolute;
+  right: -110px;
+  bottom: -150px;
+  width: 520px;
+  height: 520px;
+  background: #b6e05a;
+  transform: rotate(18deg);
+}
+
+.light {
+  background: #fbfaf6;
+}
+
+.logo {
+  width: 164px;
+  height: auto;
+}
+
+.kicker,
+.eyebrow {
+  margin-top: 70px;
+  color: #8fbf35;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+h1 {
+  margin: 26px 0 0;
+  max-width: 700px;
+  font-size: 76px;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  margin: 22px 0 20px;
+  font-size: 50px;
+  line-height: 1.05;
+}
+
+h3 {
+  margin: 0 0 14px;
+  font-size: 30px;
+}
+
+p,
+li {
+  font-size: 24px;
+  line-height: 1.34;
+}
+
+.tagline {
+  max-width: 630px;
+  font-size: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-line {
+  position: absolute;
+  left: 68px;
+  bottom: 58px;
+  font-size: 24px;
+}
+
+.lead {
+  max-width: 850px;
+  font-size: 31px;
+}
+
+.panel {
+  margin-top: 44px;
+  padding: 28px 34px;
+  border-left: 10px solid #8fbf35;
+  background: #eef3df;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 58px;
+  margin-top: 40px;
+}
+
+.metric {
+  font-size: 38px;
+  font-weight: 700;
+  color: #51790f;
+}
+
+ul {
+  margin: 0;
+  padding-left: 28px;
+}
+
+li {
+  margin-bottom: 18px;
+}
+
+.signals li::marker {
+  color: #51790f;
+}
+
+.risks li::marker {
+  color: #b74d3f;
+}

@@ -1,0 +1,14 @@
+services:
+  pitch-wow-pdf-report:
+    build: .
+    container_name: pitch-wow-pdf-report
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "127.0.0.1:18080:8080"
+    volumes:
+      - ./data:/app/data
+      - ./config:/app/config:ro
+      - ./templates:/app/templates:ro
+    shm_size: "512mb"

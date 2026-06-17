@@ -1,0 +1,44 @@
+<section class="slide cover">
+  <div class="mark">Pitch Wow</div>
+  <div class="kicker">{{ payload.startup.stage }}</div>
+  <h1>{{ payload.startup.name }}</h1>
+  <p class="tagline">{{ payload.startup.tagline }}</p>
+  <div class="founder">
+    <span>{{ payload.founder.name }}</span>
+    <strong>{{ payload.founder.role }}</strong>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="section-title">Founder Dossier</div>
+  <h2>Коротко о проекте</h2>
+  <p class="lead">{{ payload.summary }}</p>
+  <div class="two-col">
+    <div>
+      <h3>Основатель</h3>
+      <p>{{ payload.founder.background }}</p>
+    </div>
+    <div>
+      <h3>Рынок</h3>
+      <p><strong>{{ payload.market.segment }}</strong></p>
+      <p>{{ payload.market.size }}</p>
+      <p>{{ payload.market.insight }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="section-title">Signals</div>
+  <h2>Трекшн</h2>
+  <ul class="signal-list">
+    {% for item in payload.traction %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+  <h2 class="mt">Риски</h2>
+  <ul class="risk-list">
+    {% for item in payload.risks %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</section>

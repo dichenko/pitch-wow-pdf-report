@@ -1,0 +1,16 @@
+{
+  "template_id": "sample_founder_report",
+  "version": "v1",
+  "name": "Sample Founder Report",
+  "language": "ru",
+  "page": {
+    "width_px": 1024,
+    "height_px": 768,
+    "min_pages": 3,
+    "max_pages": 5
+  },
+  "pdf": {
+    "print_background": true,
+    "prefer_css_page_size": true
+  }
+}

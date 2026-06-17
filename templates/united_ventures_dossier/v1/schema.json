@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "startup", "founder", "summary", "traction", "market", "risks"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "startup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "tagline", "stage"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "tagline": { "type": "string" },
+        "stage": { "type": "string" }
+      }
+    },
+    "founder": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "role", "background"],
+      "properties": {
+        "name": { "type": "string" },
+        "role": { "type": "string" },
+        "background": { "type": "string" }
+      }
+    },
+    "summary": { "type": "string" },
+    "traction": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "market": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["segment", "size", "insight"],
+      "properties": {
+        "segment": { "type": "string" },
+        "size": { "type": "string" },
+        "insight": { "type": "string" }
+      }
+    },
+    "risks": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+  }
+}

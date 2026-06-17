@@ -1,0 +1,22 @@
+{
+  "assistants": [
+    {
+      "assistant_id": "united_ventures_assistant",
+      "name": "United Ventures Interview Assistant",
+      "active": true,
+      "api_key_hash": "1be0f9b59593d829f89ebae7fcad4eb6caa6e365fafd66c090a44f1f0f232264",
+      "default_template_id": "united_ventures_dossier",
+      "default_template_version": "v1",
+      "rate_limit_per_minute": 10
+    },
+    {
+      "assistant_id": "sample_assistant",
+      "name": "Sample Founder Interview Assistant",
+      "active": true,
+      "api_key_hash": "1be0f9b59593d829f89ebae7fcad4eb6caa6e365fafd66c090a44f1f0f232264",
+      "default_template_id": "sample_founder_report",
+      "default_template_version": "v1",
+      "rate_limit_per_minute": 10
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+<section class="slide cover">
+  <img class="logo" src="{{ asset('logo.svg') }}" alt="">
+  <div class="kicker">{{ payload.startup.stage }}</div>
+  <h1>{{ payload.startup.name }}</h1>
+  <p class="tagline">{{ payload.startup.tagline }}</p>
+  <div class="footer-line">{{ payload.founder.name }} / {{ payload.founder.role }}</div>
+</section>
+
+<section class="slide light">
+  <div class="eyebrow">Founder Dossier</div>
+  <h2>Инвестиционный снимок</h2>
+  <p class="lead">{{ payload.summary }}</p>
+  <div class="panel">
+    <h3>Почему сейчас</h3>
+    <p>{{ payload.market.insight }}</p>
+  </div>
+</section>
+
+<section class="slide light">
+  <div class="eyebrow">Market & Founder</div>
+  <div class="grid">
+    <div>
+      <h2>{{ payload.market.segment }}</h2>
+      <p class="metric">{{ payload.market.size }}</p>
+      <p>{{ payload.market.insight }}</p>
+    </div>
+    <div>
+      <h3>{{ payload.founder.name }}</h3>
+      <p>{{ payload.founder.background }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="slide light">
+  <div class="eyebrow">Signals</div>
+  <h2>Трекшн и риски</h2>
+  <div class="grid">
+    <ul class="signals">
+      {% for item in payload.traction %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+    <ul class="risks">
+      {% for item in payload.risks %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

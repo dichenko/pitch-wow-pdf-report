@@ -1,0 +1,36 @@
+{
+  "name": "pitch-wow-pdf-report",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "vitest run",
+    "generate-api-key": "tsx scripts/generate-api-key.ts",
+    "render:sample": "tsx scripts/render-sample.ts",
+    "cleanup": "tsx scripts/cleanup.ts"
+  },
+  "dependencies": {
+    "@fastify/rate-limit": "^10.3.0",
+    "@playwright/test": "^1.53.1",
+    "ajv": "^8.17.1",
+    "better-sqlite3": "^11.10.0",
+    "dotenv": "^16.5.0",
+    "fastify": "^5.4.0",
+    "nunjucks": "^3.2.4",
+    "pino": "^9.7.0",
+    "pino-pretty": "^13.0.0",
+    "tsx": "^4.20.3",
+    "ulid": "^3.0.0",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^24.0.3",
+    "@types/nunjucks": "^3.2.6",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
