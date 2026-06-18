@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright:v1.53.1-jammy AS build
+FROM mcr.microsoft.com/playwright:v1.61.0-jammy AS build
 
 WORKDIR /app
 COPY package.json package-lock.json* ./
@@ -6,7 +6,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-FROM mcr.microsoft.com/playwright:v1.53.1-jammy
+FROM mcr.microsoft.com/playwright:v1.61.0-jammy
 
 WORKDIR /app
 ENV NODE_ENV=production
