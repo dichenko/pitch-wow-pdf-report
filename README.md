@@ -25,6 +25,13 @@ Generate a key:
 npm run generate-api-key
 ```
 
+On a VPS without local Node.js/npm, generate the key through Docker Compose:
+
+```bash
+docker compose build
+docker compose run --rm pitch-wow-pdf-report npm run generate-api-key
+```
+
 Put only `Hash for config` into `config/assistants.json`. The plain key is shown once and is used by the calling assistant.
 
 The example config accepts this local test key:

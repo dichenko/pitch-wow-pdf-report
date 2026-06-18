@@ -13,6 +13,8 @@ ENV NODE_ENV=production
 COPY package.json package-lock.json* ./
 RUN npm install --omit=dev
 COPY --from=build /app/dist ./dist
+COPY --from=build /app/scripts ./scripts
+COPY --from=build /app/src ./src
 COPY --from=build /app/templates ./templates
 COPY --from=build /app/config ./config
 COPY --from=build /app/src/db/migrations ./dist/src/db/migrations
